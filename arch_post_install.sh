@@ -10,7 +10,7 @@ sudo ufw limit ssh
 sudo ufw enable
 
 #Mirrors
-
+:
 sudo pacman -S reflector
 sudo reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
 
@@ -21,13 +21,12 @@ sudo pacman -S wayland xorg-xwayland
 sudo pacman -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau mesa-utils
 
 #Window manager
-sudo pacman -S sway swaylock swayidle swaybg waybar foot polkit wofi grim slurp
+sudo pacman -S sway swaylock swayidle swaybg otf-font-awesome waybar foot polkit wofi grim slurp
 mkdir -p .config/sway
-cp /etc/sway/config ~/.config/sway/config
 
 #Display manager
-sudo pacman -S gdm
-sudo systemctl enable gdm.service
+sudo pacman -S sddm
+sudo systemctl enable sddm.service
 
 #Home dirs
 sudo pacman -S xdg-user-dirs
