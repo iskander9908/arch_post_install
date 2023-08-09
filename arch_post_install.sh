@@ -22,6 +22,8 @@ sudo pacman -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driv
 
 #Window manager
 sudo pacman -S sway swaylock swayidle swaybg waybar foot polkit wofi grim slurp
+mkdir -p .config/sway
+cp /etc/sway/config ~/.config/sway/config
 
 #Display manager
 sudo pacman -S gdm
