@@ -7,7 +7,7 @@ sudo pacman -S wayland xorg-xwayland
 sudo pacman -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau mesa-utils
 
 #Window manager and sompe apps
-sudo pacman -S sway swaylock swayidle swaybg otf-font-awesome waybar foot deluge polkit wofi grim slurp
+sudo pacman -S sway swaylock swayidle swaybg otf-font-awesome waybar foot mako deluge polkit wofi grim slurp
 mkdir -p ~/.config/sway
 cp ~/arch_post_install/sway/config ~/.config/sway
 cp -r ~/arch_post_install/waybar ~/.config/
