@@ -43,7 +43,4 @@ sudo pacman -S pipewire lib32-pipewire pipewire-jack lib32-pipewire-jack pipewir
 #Another apps
 sudo pacman -S firefox telegram-desktop spotify-launcher thunar xarchiver catfish featherpad libreoffice-still atril qalculate-gtk
 
-#Reboot
-systemctl reboot
-
 ###Don't forget to create swap file and install aur helper
