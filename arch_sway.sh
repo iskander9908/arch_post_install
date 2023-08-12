@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Gen rec packs
-sudo pacman -S ufw rsync reflector wayland xorg-xwayland sway swaylock swayidle swaybg otf-font-awesome waybar foot dunst man transmission-qt polkit wofi grim slurp sddm xdg-user-dirs tlp pipewire lib32-pipewire pipewire-docs pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack lib32-pipewire-jack pavucontrol
+sudo pacman -S ufw rsync reflector wayland xorg-xwayland sway swaylock swayidle swaybg otf-font-awesome waybar foot dunst man transmission-qt polkit wofi grim slurp xdg-user-dirs tlp pipewire lib32-pipewire pipewire-docs pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack lib32-pipewire-jack pavucontrol
 
 #Drivers
 sudo pacman -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau mesa-utils
@@ -13,9 +13,6 @@ sudo ufw allow from 192.168.0.0/24
 sudo ufw allow Transmission
 sudo ufw limit ssh
 sudo ufw enable
-
-#Display manager
-sudo systemctl enable sddm.service
 
 #Mirrors
 sudo reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
