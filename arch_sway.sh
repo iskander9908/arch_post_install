@@ -27,6 +27,6 @@ xdg-user-dirs-update
 sudo systemctl enable tlp.service
 
 #Another apps
-sudo pacman -S firefox telegram-desktop spotify-launcher thunar xarchiver catfish featherpad libreoffice-still atril qalculate-gtk
+sudo pacman -S firefox telegram-desktop spotify-launcher thunar imv xarchiver catfish featherpad libreoffice-still atril qalculate-gtk
 
 ###Don't forget to create swap file and install aur helper
