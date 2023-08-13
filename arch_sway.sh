@@ -26,4 +26,4 @@ sudo systemctl enable tlp.service
 #Another apps
 sudo pacman -S firefox telegram-desktop vlc spotify-launcher thunar imv xarchiver catfish featherpad libreoffice-still atril qalculate-gtk
 
-### Also you may want to create swap file, change shell, install usb mounter and aur helper
+### Also you may want to create swap file, change shell, configure usb mounter and install aur helper
