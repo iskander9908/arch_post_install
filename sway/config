@@ -57,6 +57,11 @@ exec swayidle -w \
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
+#Touchpad:
+input type:touchpad {
+    tap enabled
+    natural_scroll enabled
+}
 
 #Keymap:
 input * {
@@ -228,21 +233,10 @@ bindsym --locked XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
-bindsym XF86Search exec $menu
 # Status Bar
 bar swaybar_command waybar
 
-#Touchpad:
-input type:touchpad {
-    tap enabled
-    natural_scroll enabled
-}
-
-
 #Notifications
 exec dunst
-
-#Network_manager
-exec nm-applet
 
 include /etc/sway/config.d/*
