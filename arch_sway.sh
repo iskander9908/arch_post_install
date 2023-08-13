@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Gen rec packs
-sudo pacman -S ufw rsync reflector wayland xorg-xwayland sway swaylock swayidle swaybg brightnessctl noto-fonts otf-font-awesome waybar foot dunst man-db transmission-qt polkit wofi grim slurp xdg-user-dirs tlp pipewire lib32-pipewire pipewire-docs wireplumber pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack lib32-pipewire-jack pavucontrol
+sudo pacman -S ufw rsync reflector wayland xorg-xwayland sway swaylock swayidle swaybg udisks2 brightnessctl noto-fonts otf-font-awesome waybar foot dunst man-db transmission-qt polkit wofi grim slurp xdg-user-dirs tlp pipewire lib32-pipewire pipewire-docs wireplumber pipewire-audio pipewire-alsa pipewire-pulse pipewire-jack lib32-pipewire-jack pavucontrol
 
 #Drivers
 sudo pacman -S mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau mesa-utils
@@ -26,4 +26,4 @@ sudo systemctl enable tlp.service
 #Another apps
 sudo pacman -S firefox telegram-desktop vlc spotify-launcher thunar imv xarchiver catfish featherpad libreoffice-still atril qalculate-gtk
 
-###Don't forget to create swap file and install aur helper
+### Also you may want to create swap file, change shell, install usb mounter and aur helper
