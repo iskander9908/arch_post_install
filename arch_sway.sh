@@ -23,6 +23,10 @@ xdg-user-dirs-update
 #Power managment
 sudo systemctl enable tlp.service
 
+#Sway
+cp -r ~/arch_post_install/sway ~/.config/
+cp -r /etc/xdg/waybar ~/.config/
+
 #Another apps
 sudo pacman -S firefox telegram-desktop vlc spotify-launcher thunar imv xarchiver catfish featherpad libreoffice-still atril qalculate-gtk
 
