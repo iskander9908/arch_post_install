@@ -23,7 +23,7 @@ set $menu wofi --show run | xargs swaymsg exec --
 ### Output configuration
 #
 #wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /home/iskander/Pictures/wanda-maximoff-scarlet-witch-elizabeth-olsee-5k-ql-1920x1080.jpg fill
 #
 #HiDPI
 #
@@ -58,7 +58,6 @@ exec swayidle -w \
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 #Touchpad:
-
 input type:touchpad {
     events disabled_on_external_mouse
     dwt enabled
