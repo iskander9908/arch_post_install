@@ -26,6 +26,7 @@ sudo systemctl enable tlp.service
 #Sway
 cp -r ~/arch_post_install/sway ~/.config/
 cp -r /etc/xdg/waybar ~/.config/
+cp ~/arch_post_install/wanda-maximoff-scarlet-witch-elizabeth-olsee-5k-ql-1920x1080.jpg ~/Pictures
 
 #Another apps
 sudo pacman -S firefox telegram-desktop vlc spotify-launcher thunar imv xarchiver catfish featherpad libreoffice-still atril qalculate-gtk
