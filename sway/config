@@ -23,7 +23,7 @@ set $menu wofi --show run | xargs swaymsg exec --
 ### Output configuration
 #
 #wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/wanda-maximoff-scarlet-witch-elizabeth-olsee-5k-ql-1920x1080.jpg fill
+output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 #HiDPI
 #
