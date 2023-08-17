@@ -77,7 +77,6 @@ input * {
     xkb_layout us,ru
     xkb_options "grp:alt_shift_toggle
 }
-
 #
 #NumLock
 #
@@ -242,7 +241,6 @@ bindsym XF86AudioPrev exec playerctl previous
 # Status Bar
 #
 bar swaybar_command waybar
-
 #
 # Notifications
 #
