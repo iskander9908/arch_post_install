@@ -30,6 +30,9 @@ cp -r /etc/xdg/waybar ~/.config/
 # Dunst
 cp -r ~/arch_post_install/dunst ~/.config/
 
+# Foot
+cp -r /etc/xdg/foot ~/.config/
+
 # Another apps
 sudo pacman -S firefox telegram-desktop vlc spotify-launcher pcmanfm-gtk3 imv zathura zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps file-roller libreoffice-still qalculate-gtk
 
