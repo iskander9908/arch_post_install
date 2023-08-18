@@ -27,6 +27,9 @@ sudo systemctl enable tlp.service
 cp -r ~/arch_post_install/sway ~/.config/
 cp -r /etc/xdg/waybar ~/.config/
 
+# Dunst
+cp -r ~/arch_post_install/dunst ~/.config/
+
 # Another apps
 sudo pacman -S firefox telegram-desktop vlc spotify-launcher pcmanfm-gtk3 imv zathura zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps file-roller libreoffice-still qalculate-gtk
 
