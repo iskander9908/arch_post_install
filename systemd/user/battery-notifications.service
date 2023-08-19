@@ -1,0 +1,10 @@
+[Unit]
+Description=Battery notifications
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/battery-notifications.sh
+
+[Install]
+WantedBy=graphical.target
+
