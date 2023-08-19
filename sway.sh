@@ -27,8 +27,9 @@ sudo systemctl enable tlp.service
 cp -r ~/arch_post_install/sway ~/.config/
 cp -r /etc/xdg/waybar ~/.config/
 
-# Dunst
+# Notifications
 cp -r ~/arch_post_install/dunst ~/.config/
+cp -r ~/arch_post_install/systemd/ ~/.config/
 
 # Foot
 cp -r /etc/xdg/foot ~/.config/
