@@ -23,6 +23,15 @@ xdg-user-dirs-update
 # Power managment
 sudo systemctl enable tlp.service
 
+# Aur helper
+sudo pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru.git
+cd ~/paru
+makepkg -si
+
+# USB controller and some aur stuff
+paru -S upd72020x-fw wob clipman
+
 # Sway
 cp -r ~/arch_post_install/sway ~/.config/
 cp -r /etc/xdg/waybar ~/.config/
@@ -37,4 +46,4 @@ cp -r /etc/xdg/foot ~/.config/
 # Another apps
 sudo pacman -S firefox telegram-desktop vlc spotify-launcher imv zathura zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps file-roller libreoffice-still qalculate-gtk
 
-### Also you may want to create swap file, change shell, configure usb mounter and install aur helper
+### Also you may want to create swap file, change shell and configure usb mounter
