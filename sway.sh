@@ -38,7 +38,6 @@ cp -r /etc/xdg/waybar ~/.config/
 
 # Notifications
 cp -r ~/arch_post_install/dunst ~/.config/
-cp -r ~/arch_post_install/systemd/ ~/.config/
 
 # Foot
 cp -r /etc/xdg/foot ~/.config/
