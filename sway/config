@@ -254,12 +254,13 @@ bar swaybar_command waybar
 # Notifications
 exec dunst
 
-# Power alert
-exec batsignal
-
 # Clipman
 exec wl-paste -t text --watch clipman store --no-persist
+
+# WOB
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
 # Graphical indicator bars
 set $WOBSOCK $XDG_RUNTIME_DIR/wob.sock
 exec rm -f $WOBSOCK && mkfifo $WOBSOCK && tail -f $WOBSOCK | wob
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
