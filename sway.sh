@@ -29,7 +29,7 @@ git clone https://aur.archlinux.org/paru.git
 cd ~/paru
 makepkg -si
 
-# USB controller and some aur stuff
+# USB controller firmware and some aur stuff
 paru -S upd72020x-fw wob clipman
 
 #
