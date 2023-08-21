@@ -32,17 +32,36 @@ makepkg -si
 # USB controller and some aur stuff
 paru -S upd72020x-fw wob clipman
 
+#
 # Sway
+#
 cp -r ~/arch_post_install/sway ~/.config/
-cp -r /etc/xdg/waybar ~/.config/
 
+# Waybar
+cp -r /etc/xdg/waybar ~/.config/
+# Background
+cp ~/arch_post_install/winter-landscape-from-drone-1920x1080_894877-mm-90.jpg ~/Pictures
+
+#
 # Notifications
+#
+
+#Dunst
 cp -r ~/arch_post_install/dunst ~/.config/
+
+#Batsignal
+sudo systemctl daemon-reload
+systemctl enable --now --user batsignal.service
+mkdir -p ~/.config/systemd/user/batsignal.service.d
+printf '[Service]\nExecStart=\nExecStart=batsignal -c 10 -w 30 -f 97' > ~/.config/systemd/user/batsignal.service.d/options.conf
+
+# WOB
+systemctl enable --now --user wob.socket
 
 # Foot
 cp -r /etc/xdg/foot ~/.config/
 
 # Another apps
-sudo pacman -S firefox telegram-desktop vlc spotify-launcher imv zathura zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps file-roller libreoffice-still qalculate-gtk
+sudo pacman -S catfish liferea firefox telegram-desktop vlc spotify-launcher imv zathura zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps file-roller libreoffice-still qalculate-gtk
 
 ### Also you may want to create swap file, change shell and configure usb mounter
