@@ -30,7 +30,7 @@ cd ~/paru
 makepkg -si
 
 # USB controller firmware and some aur stuff
-paru -S upd72020x-fw wob clipman
+paru -S upd72020x-fw wob clipman batsignal
 
 #
 # Sway
