@@ -55,8 +55,14 @@ systemctl enable --now --user batsignal.service
 mkdir -p ~/.config/systemd/user/batsignal.service.d
 printf '[Service]\nExecStart=\nExecStart=batsignal -c 10 -w 30 -f 97' > ~/.config/systemd/user/batsignal.service.d/options.conf
 
+# Play-sound notifications script
+cp -r ~/arch_post_install/bin ~/.local
+
 # WOB
 systemctl enable --now --user wob.socket
+
+#Firefox
+sudo echo "MOZ_ENABLE_WAYLAND=1" >> /etc/environment
 
 # Foot
 cp -r /etc/xdg/foot ~/.config/
