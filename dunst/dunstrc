@@ -408,6 +408,9 @@
 [fullscreen_show_critical]
     msg_urgency = critical
     fullscreen = show
+[play-sound]
+    appname = batsignal
+    script = ~/.local/bin/warning.sh
 
 #[espeak]
 #    summary = "*"
