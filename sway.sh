@@ -57,6 +57,7 @@ printf '[Service]\nExecStart=\nExecStart=batsignal -c 10 -w 30 -f 97' > ~/.confi
 
 # Play-sound notifications script
 cp -r ~/arch_post_install/bin ~/.local
+chmod +x ~/.local/bin/warning.sh
 
 # WOB
 systemctl enable --now --user wob.socket
