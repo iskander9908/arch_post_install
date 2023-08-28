@@ -56,7 +56,7 @@ mkdir -p ~/.config/systemd/user/batsignal.service.d
 printf '[Service]\nExecStart=\nExecStart=batsignal -c 10 -w 30 -f 97' > ~/.config/systemd/user/batsignal.service.d/options.conf
 
 # Play-sound notifications script
-cp -r ~/arch_post_install/bin ~/.local
+cp -r ~/arch_post_install/bin ~/.local/
 chmod +x ~/.local/bin/warning.sh
 
 # WOB
