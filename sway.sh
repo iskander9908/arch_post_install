@@ -38,7 +38,7 @@ paru -S upd72020x-fw wob clipman batsignal
 cp -r ~/arch_post_install/sway ~/.config/
 
 # Waybar
-cp -r /etc/xdg/waybar ~/.config/
+cp -r ~/arch_post_install/waybar ~/.config/
 # Background
 cp ~/arch_post_install/winter-landscape-from-drone-1920x1080_894877-mm-90.jpg ~/Pictures
 
