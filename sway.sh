@@ -66,7 +66,7 @@ systemctl enable --now --user wob.socket
 sudo echo "MOZ_ENABLE_WAYLAND=1" >> /etc/environment
 
 # Foot
-cp -r /etc/xdg/foot ~/.config/
+cp -r ~/arch_post_install/foot ~/.config/
 
 # Another apps
 sudo pacman -S catfish liferea firefox telegram-desktop vlc spotify-launcher imv atril file-roller libreoffice-still qalculate-gtk
