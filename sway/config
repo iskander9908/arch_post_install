@@ -23,7 +23,7 @@ set $menu wofi --show run | xargs swaymsg exec --
 ### Output configuration
 #
 #wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/winter-landscape-from-drone-1920x1080_894877-mm-90.jpg fill
+output * bg ~/Pictures/Landscape.jpg    fill
 
 # Gaps
 smart_gaps on
@@ -35,14 +35,15 @@ default_border pixel
 
 # Floating windows
 for_window [app_id="qalculate-gtk"] floating toggle
-for_window [app_id="thunar"] floating enable
-#for_window [app_id="zathura"] floating enable
 for_window [app_id="file-roller"] floating enablee
 for_window [window_type="dialog"] floating enable
 for_window [window_role="dialog"] floating enable
 for_window [app_id="featherpad"] floating enable
-for_window [class="Spotify"] floating enable
+#for_window [class="Spotify"] floating enable
 #for_window [app_id="foot"] floating enable
+for_window [app_id="Alacritty"] floating enable
+for_window [app_id="nm-connection-editor"] floating enable
+for_window [app_id="pavucontrol"] floating enable
 #
 #HiDPI
 #
@@ -257,6 +258,9 @@ bar swaybar_command waybar
 
 # Notifications
 exec dunst
+
+# Network Manager
+exec nm-applet
 
 # Clipman
 exec wl-paste -t text --watch clipman store --no-persist
