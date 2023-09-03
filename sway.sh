@@ -63,7 +63,7 @@ chmod +x ~/.local/bin/warning.sh
 systemctl enable --now --user wob.socket
 
 #Firefox
-sudo echo "MOZ_ENABLE_WAYLAND=1" >> /etc/environment
+echo "MOZ_ENABLE_WAYLAND=1" | sudo tee -a /etc/environment
 
 # Foot
 cp -r ~/arch_post_install/foot ~/.config/
