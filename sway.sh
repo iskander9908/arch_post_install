@@ -43,6 +43,11 @@ cp -r ~/arch_post_install/waybar ~/.config/
 cp ~/arch_post_install/winter-landscape-from-drone-1920x1080_894877-mm-90.jpg ~/Pictures
 
 #
+# Zathura
+#
+cp -r ~/arch_post_install/zathura ~/.config/
+
+#
 # Notifications
 #
 
@@ -69,6 +74,6 @@ echo "MOZ_ENABLE_WAYLAND=1" | sudo tee -a /etc/environment
 cp -r ~/arch_post_install/foot ~/.config/
 
 # Another apps
-sudo pacman -S catfish liferea firefox telegram-desktop vlc spotify-launcher imv atril file-roller libreoffice-still qalculate-gtk
+sudo pacman -S catfish liferea firefox telegram-desktop vlc spotify-launcher imv zathura zathura-cb zathura-djvu zathura-pdf-mupdf zathura-ps file-roller libreoffice-still qalculate-gtk
 
 ### Also you may want to create swap file, change shell and configure usb mounter
